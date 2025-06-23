@@ -1,0 +1,27 @@
+object dmConexao: TdmConexao
+  OnCreate = DataModuleCreate
+  Height = 321
+  Width = 509
+  PixelsPerInch = 120
+  object sqlConexao: TFDConnection
+    Left = 224
+    Top = 8
+  end
+  object sqlFdqUsuarios: TFDQuery
+    Connection = sqlConexao
+    Left = 120
+    Top = 96
+  end
+  object cdsUsuarios: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspUsuarios'
+    Left = 320
+    Top = 96
+  end
+  object dspUsuarios: TDataSetProvider
+    DataSet = sqlFdqUsuarios
+    Left = 224
+    Top = 96
+  end
+end

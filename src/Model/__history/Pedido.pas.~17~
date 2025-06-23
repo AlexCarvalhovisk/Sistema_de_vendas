@@ -1,0 +1,109 @@
+unit Pedido;
+
+interface
+
+uses
+  eInterfacePedido, System.SysUtils;
+
+  type
+    TPedido = class(TInterfacedObject, iPedido)
+
+  private
+
+    //Variáveis
+    FCodigo: Integer;
+    FValor_Total: Currency;
+    FData_Emissao: Data;
+    FNumero_Pedido: Integer;
+    FCodigo_do_Cliente: Integer;
+
+    //Sets
+    procedure SetCodigo_do_Cliente(const Value: Integer);
+    procedure SetData_Emissao(const Value: Data);
+    procedure SetNumero_Pedido(const Value: Integer);
+    procedure SetValor_Total(const Value: Currency);
+
+    //Funções
+    function SalvarPedidoe (Value : String) : iPedido;
+    function ListarPedido (Value : String) : iPedido;
+    function AtualizarPedido (value : Integer) : iPedido;
+    function DeletarPedido (value : Integer) : iPedido;
+
+  public
+
+    //Gets
+    property Codigo : Integer read FCodigo;
+    property Numero_Pedido : Integer read FNumero_Pedido write SetNumero_Pedido;
+    property Data_Emissao : Data read FData_Emissao write SetData_Emissao;
+    property Codigo_do_Cliente : Integer read FCodigo_do_Cliente write SetCodigo_do_Cliente;
+    property Valor_Total : Currency read FValor_Total write SetValor_Total;
+
+    constructor Create;
+    destructor Destroy; override;
+    class function New : iPedido;
+
+  end;
+
+implementation
+
+{ TPedido }
+
+{ TPedido }
+
+constructor TPedido.Create;
+begin
+
+end;
+
+destructor TPedido.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TPedido.New: iPedido;
+begin
+  Result := Self.Create;
+end;
+
+function TPedido.SalvarPedidoe(Value: String): iPedido;
+begin
+
+end;
+
+function TPedido.AtualizarPedido(value: Integer): iPedido;
+begin
+
+end;
+
+function TPedido.ListarPedido(Value: String): iPedido;
+begin
+
+end;
+
+function TPedido.DeletarPedido(value: Integer): iPedido;
+begin
+
+end;
+
+procedure TPedido.SetCodigo_do_Cliente(const Value: Integer);
+begin
+
+end;
+
+procedure TPedido.SetData_Emissao(const Value: Data);
+begin
+
+end;
+
+procedure TPedido.SetNumero_Pedido(const Value: Integer);
+begin
+
+end;
+
+procedure TPedido.SetValor_Total(const Value: Currency);
+begin
+
+end;
+
+end.

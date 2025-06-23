@@ -1,0 +1,96 @@
+unit Cliente;
+
+interface
+
+uses
+
+  eInterfaceCliente, System.SysUtils;
+
+  type
+    TCliente = class(TInterfacedObject, iCliente)
+
+  private
+
+    //Variáveis
+    FCodigo: Integer;
+    FNome: String;
+    FCidade: String;
+    FUF: String;
+
+    //Seters
+    procedure SetCidade(const Value: String);
+    procedure SetNome(const Value: String);
+    procedure SetUF(const Value: String);
+
+    //Funções
+    function SalvarCliente (Value : String) : iCliente;
+    function ListarCliente (Value : String) : iCliente;
+    function AtualizarCliente (value : Integer) : iCliente;
+    function DeletarCliente (value : Integer) : iCliente;
+
+  public
+
+    //Getters
+    property Codigo : Integer read FCodigo;
+    property Nome : String read FNome write SetNome;
+    property Cidade : String read FCidade write SetCidade;
+    property UF : String read FUF write SetUF;
+
+    constructor Create;
+    destructor Destroy; override;
+
+  end;
+
+implementation
+
+{ TCliente }
+
+{ TCliente }
+
+function TCliente.AtualizarCliente(value: Integer): iCliente;
+begin
+
+end;
+
+constructor TCliente.Create;
+begin
+
+end;
+
+function TCliente.DeletarCliente(value: Integer): iCliente;
+begin
+
+end;
+
+destructor TCliente.Destroy;
+begin
+
+  inherited;
+end;
+
+function TCliente.ListarCliente(Value: String): iCliente;
+begin
+
+end;
+
+function TCliente.SalvarCliente(Value: String): iCliente;
+begin
+
+end;
+
+procedure TCliente.SetCidade(const Value: String);
+begin
+
+end;
+
+procedure TCliente.SetNome(const Value: String);
+begin
+
+end;
+
+procedure TCliente.SetUF(const Value: String);
+begin
+
+end;
+
+end.

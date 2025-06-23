@@ -1,0 +1,60 @@
+inherited frmCadastroClienteBDA: TfrmCadastroClienteBDA
+  Caption = 'Cadastro Cliente BDA'
+  StyleElements = [seFont, seClient, seBorder]
+  TextHeight = 21
+  inherited pnlContainer: TPanel
+    StyleElements = [seFont, seClient, seBorder]
+    inherited pnlTop: TPanel
+      StyleElements = [seFont, seClient, seBorder]
+      inherited lblTextoFormularioCliente: TLabel
+        StyleElements = [seFont, seClient, seBorder]
+      end
+      inherited pnlMenuNave: TPanel
+        StyleElements = [seFont, seClient, seBorder]
+      end
+    end
+    inherited pnlButton: TPanel
+      StyleElements = [seFont, seClient, seBorder]
+      inherited pnlLimpar: TPanel
+        StyleElements = [seFont, seClient, seBorder]
+      end
+      inherited pnlListar: TPanel
+        StyleElements = [seFont, seClient, seBorder]
+      end
+      inherited pnlAtlterar: TPanel
+        StyleElements = [seFont, seClient, seBorder]
+      end
+      inherited pnlSalvar: TPanel
+        StyleElements = [seFont, seClient, seBorder]
+      end
+      inherited pnlDeletar: TPanel
+        StyleElements = [seFont, seClient, seBorder]
+      end
+    end
+    inherited pnlAcoes: TPanel
+      StyleElements = [seFont, seClient, seBorder]
+      inherited lblNomeCliente: TLabeledEdit
+        StyleElements = [seFont, seClient, seBorder]
+      end
+      inherited lblCidade: TLabeledEdit
+        StyleElements = [seFont, seClient, seBorder]
+      end
+      inherited lblUF: TLabeledEdit
+        StyleElements = [seFont, seClient, seBorder]
+      end
+      inherited pnlFotoCliente: TPanel
+        StyleElements = [seFont, seClient, seBorder]
+      end
+    end
+    inherited pnlGrid: TPanel
+      StyleElements = [seFont, seClient, seBorder]
+      inherited dbGridTabelaCliente: TDBGrid
+        DataSource = DataSourceBDA
+      end
+    end
+  end
+  object DataSourceBDA: TDataSource
+    Left = 936
+    Top = 396
+  end
+end

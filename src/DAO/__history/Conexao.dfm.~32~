@@ -1,0 +1,17 @@
+object dmConexao: TdmConexao
+  OnCreate = DataModuleCreate
+  Height = 321
+  Width = 363
+  PixelsPerInch = 120
+  object fdqListaBanco: TFDQuery
+    Connection = sqlConexao
+    SQL.Strings = (
+      'Select * from Clientes')
+    Left = 184
+    Top = 72
+  end
+  object sqlConexao: TFDConnection
+    Left = 32
+    Top = 64
+  end
+end

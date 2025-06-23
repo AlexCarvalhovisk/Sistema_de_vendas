@@ -1,0 +1,18 @@
+unit eInterfaceCliente;
+
+interface
+  type
+    iCliente = interface
+        //Assinatura do método para que não possa ser gerada em duplicidade
+        ['{AEED17BE-6242-4865-B7B8-68CE1744D513}']
+
+        function criaCliente : String;
+        function recuperaCliente : String;
+        function atualizaCliente : Integer;
+        function deletaCliente : Integer;
+
+    end;
+
+implementation
+
+end.

@@ -1,0 +1,17 @@
+unit eInterfaceProduto;
+
+interface
+  type
+    iProduto = interface
+      ['{9AD7E395-5F8F-4C89-B60D-F612F4B5F6DD}']
+
+      function criaProduto : String;
+      function recuperaProduto : String;
+      function atualizaProduto : Integer;
+      function deletaProduto : Integer;
+
+    end;
+
+implementation
+
+end.

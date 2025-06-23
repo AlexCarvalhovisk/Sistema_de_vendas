@@ -1,0 +1,26 @@
+unit Cadastro_Cliente_BDA;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Cadastro_Cliente, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Mask, Vcl.Buttons;
+
+type
+  TfrmCadastroClienteBDA = class(TfrmCadastroCliente)
+    DataSourceBDA: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadastroClienteBDA: TfrmCadastroClienteBDA;
+
+implementation
+
+{$R *.dfm}
+
+end.

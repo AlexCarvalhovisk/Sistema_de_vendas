@@ -1,0 +1,87 @@
+unit Pedido;
+
+interface
+
+uses
+  eInterfacePedido, System.SysUtils;
+
+  type
+    TPedido = class(TInterfacedObject, iPedido)
+
+  private
+
+    //Variáveis
+    FCodigo: Integer;
+    FValor_Total: Currency;
+    FData_Emissao: Data;
+    FNumero_Pedido: Integer;
+    FCodigo_do_Cliente: Integer;
+
+    //Sets
+    procedure SetCodigo_do_Cliente(const Value: Integer);
+    procedure SetData_Emissao(const Value: Data);
+    procedure SetNumero_Pedido(const Value: Integer);
+    procedure SetValor_Total(const Value: Currency);
+
+  public
+
+    //Gets
+    property Codigo : Integer read FCodigo;
+    property Numero_Pedido : Integer read FNumero_Pedido write SetNumero_Pedido;
+    property Data_Emissao : Data read FData_Emissao write SetData_Emissao;
+    property Codigo_do_Cliente : Integer read FCodigo_do_Cliente write SetCodigo_do_Cliente;
+    property Valor_Total : Currency read FValor_Total write SetValor_Total;
+
+    //Funções
+    function SalvarPedido : String;
+    function ListarPedido : String;
+    function AtualizarPedido : Integer;
+    function DeletarPedido : Integer;
+
+  end;
+
+implementation
+
+{ TPedido }
+
+function TPedido.AtualizarPedido: Integer;
+begin
+
+end;
+
+function TPedido.DeletarPedido: Integer;
+begin
+
+end;
+
+function TPedido.ListarPedido: String;
+begin
+
+end;
+
+function TPedido.SalvarPedido: String;
+begin
+
+end;
+
+procedure TPedido.SetCodigo_do_Cliente(const Value: Integer);
+begin
+  FCodigo_do_Cliente := Value;
+end;
+
+procedure TPedido.SetData_Emissao(const Value: Data);
+begin
+  FData_Emissao := Value;
+end;
+
+procedure TPedido.SetNumero_Pedido(const Value: Integer);
+begin
+  FNumero_Pedido := Value;
+end;
+
+procedure TPedido.SetValor_Total(const Value: Currency);
+begin
+  FValor_Total := Value;
+end;
+
+end.

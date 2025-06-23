@@ -1,0 +1,31 @@
+program SisHosp;
+
+uses
+  Vcl.Forms,
+  MenuProjeto in 'src\View\MenuProjeto.pas' {Menu},
+  SplashScreen in 'src\View\SplashScreen.pas' {frmSplashScreen},
+  Produto in 'src\Model\Produto.pas',
+  Pedido in 'src\Model\Pedido.pas',
+  eInterfaceCliente in 'src\Interface\eInterfaceCliente.pas',
+  Cadastro_Cliente in 'src\View\Cadastro_Cliente.pas' {frmCadastroCliente},
+  Cliente in 'src\Model\Cliente.pas',
+  eInterfaceProduto in 'src\Interface\eInterfaceProduto.pas',
+  eInterfacePedido in 'src\Interface\eInterfacePedido.pas',
+  Cadastro_Produto in 'src\View\Cadastro_Produto.pas' {frmCadastroProduto},
+  Relatorio in 'src\View\Relatorio.pas' {frmPedidoDeVendas},
+  Conexao in 'src\DAO\Conexao.pas' {dmConexao: TDataModule},
+  Pedido_De_Vendas in 'src\View\Pedido_De_Vendas.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TdmConexao, dmConexao);
+  Application.CreateForm(TMenu, Menu);
+  Application.CreateForm(TfrmCadastroCliente, frmCadastroCliente);
+  Application.CreateForm(TfrmCadastroProduto, frmCadastroProduto);
+  Application.CreateForm(TfrmPedidoDeVendas, frmPedidoDeVendas);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

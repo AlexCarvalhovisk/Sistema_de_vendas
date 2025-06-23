@@ -1,0 +1,56 @@
+unit Cadastro_Cliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Buttons, Vcl.StdCtrls,
+  Data.DB, Vcl.Grids, Vcl.DBGrids;
+
+type
+  TCadastroCliente = class(TForm)
+    pnlContainer: TPanel;
+    pnlTop: TPanel;
+    pnlButton: TPanel;
+    pnlAcoes: TPanel;
+    pnlGrid: TPanel;
+    pnlLimpar: TPanel;
+    shpLimpar: TShape;
+    btnLimpar: TSpeedButton;
+    pnlListar: TPanel;
+    shpListar: TShape;
+    btnListar: TSpeedButton;
+    pnlAtualizar: TPanel;
+    shpAtualizar: TShape;
+    btnAtualizar: TSpeedButton;
+    pnlSalvar: TPanel;
+    shpSalvar: TShape;
+    btnSalvar: TSpeedButton;
+    pnlExcluir: TPanel;
+    shpExcluir: TShape;
+    btnExcluir: TSpeedButton;
+    pnlVoltar: TPanel;
+    shpVoltar: TShape;
+    btnVoltar: TSpeedButton;
+    lblTextoFormularioCliente: TLabel;
+    pnlMenuNave: TPanel;
+    shpMenuNave: TShape;
+    btnMenuNave: TSpeedButton;
+    dbGridTabelaCliente: TDBGrid;
+    pnlClienteAssiduo: TPanel;
+    pnlNomeCliente: TPanel;
+    pnlFotoCliente: TPanel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  CadastroCliente: TCadastroCliente;
+
+implementation
+
+{$R *.dfm}
+
+end.

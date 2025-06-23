@@ -1,0 +1,16 @@
+unit eInterfaceCliente;
+
+interface
+  type
+    iCliente = interface
+        //Assinatura do método para que não possa ser gerada em duplicidade
+        ['{AEED17BE-6242-4865-B7B8-68CE1744D513}']
+        function Codigo : Integer;
+        function Nome (Value : String) : iCliente;
+        function Cidade (Value : String) : iCliente;
+        function UF (Value : String) : iCliente;
+    end;
+
+implementation
+
+end.

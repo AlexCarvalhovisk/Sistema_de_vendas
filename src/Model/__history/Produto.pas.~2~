@@ -1,0 +1,18 @@
+unit Produto;
+
+interface
+
+uses
+  eInterfaceProduto;
+  type
+    TProduto = class(TInterfacedObject, iProduto)
+
+      public
+        property Codigo;
+        property Descricao;
+        property Preco_de_venda;
+    end;
+
+implementation
+
+end.

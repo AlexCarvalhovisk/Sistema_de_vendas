@@ -1,0 +1,53 @@
+unit Relatorio;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Buttons, Vcl.StdCtrls,
+  Data.DB, Vcl.Grids, Vcl.DBGrids;
+
+type
+  TfrmRelatorioVendas = class(TForm)
+    pnlGeral: TPanel;
+    pnlTop: TPanel;
+    lblTextoFormularioRelatorio: TLabel;
+    pnlVoltar: TPanel;
+    shpVoltar: TShape;
+    btnVoltar: TSpeedButton;
+    pnlMenuNave: TPanel;
+    shpMenuNave: TShape;
+    btnMenuNave: TSpeedButton;
+    pnlButton: TPanel;
+    pnlLimpar: TPanel;
+    shpLimpar: TShape;
+    btnLimpar: TSpeedButton;
+    pnlListar: TPanel;
+    shpListar: TShape;
+    btnListar: TSpeedButton;
+    pnlAtlterar: TPanel;
+    shpAlterar: TShape;
+    btnAlterar: TSpeedButton;
+    pnlSalvar: TPanel;
+    shpSalvar: TShape;
+    btnSalvar: TSpeedButton;
+    pnlDeletar: TPanel;
+    shpDeletar: TShape;
+    btnDeletar: TSpeedButton;
+    pnlGrid: TPanel;
+    dbGridTabelaCliente: TDBGrid;
+    dsRelatorio: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRelatorioVendas : TfrmRelatorioVendas;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,70 @@
+unit Produto;
+
+interface
+
+uses
+  eInterfaceProduto;
+  type
+    TProduto = class(TInterfacedObject, iProduto)
+
+  private
+
+    //Variáveis
+    FDescricao: String;
+    FPreco_de_venda: Currency;
+
+    //Sets
+    procedure SetDescricao(const Value: String);
+    procedure SetPreco_de_venda(const Value: Currency);
+
+  public
+
+    //Gets
+    property Descricao : String read FDescricao write SetDescricao;
+    property Preco_de_venda : Currency read FPreco_de_venda write SetPreco_de_venda;
+
+    //Funções herdadas da Interface
+    function criaProduto : String;
+    function recuperaProduto : String;
+    function atualizaProduto : Integer;
+    function deletaProduto : Integer;
+
+  end;
+
+implementation
+
+{ TProduto }
+
+{ TProduto }
+
+function TProduto.atualizaProduto: Integer;
+begin
+
+end;
+
+function TProduto.criaProduto: String;
+begin
+
+end;
+
+function TProduto.deletaProduto: Integer;
+begin
+
+end;
+
+function TProduto.recuperaProduto: String;
+begin
+
+end;
+
+procedure TProduto.SetDescricao(const Value: String);
+begin
+  FDescricao := Value;
+end;
+
+procedure TProduto.SetPreco_de_venda(const Value: Currency);
+begin
+  FPreco_de_venda := Value;
+end;
+
+end.

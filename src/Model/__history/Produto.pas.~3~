@@ -1,0 +1,46 @@
+unit Produto;
+
+interface
+
+uses
+  eInterfaceProduto;
+  type
+    TProduto = class(TInterfacedObject, iProduto)
+
+      public
+        property Codigo;
+        property Descricao;
+        property Preco_de_venda;
+
+        function criaProduto : String;
+        function recuperaProduto : String;
+        function atualizaProduto : Integer;
+        function deletaProduto : Integer;
+
+    end;
+
+implementation
+
+{ TProduto }
+
+function TProduto.atualizaProduto: Integer;
+begin
+
+end;
+
+function TProduto.criaProduto: String;
+begin
+
+end;
+
+function TProduto.deletaProduto: Integer;
+begin
+
+end;
+
+function TProduto.recuperaProduto: String;
+begin
+
+end;
+
+end.

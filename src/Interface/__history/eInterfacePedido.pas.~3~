@@ -1,0 +1,19 @@
+unit eInterfacePedido;
+
+interface
+  type
+    iPedido = Interface
+
+      //Assinatura do método para que não possa ser gerada em duplicidade
+      ['{0E920ED9-606A-4ECE-8D02-32E64C1755C8}']
+
+      function SalvarPedido : String;
+      function ListarPedido : String;
+      function AtualizarPedido : Integer;
+      function DeletarPedido : Integer;
+
+    end;
+
+implementation
+
+end.
