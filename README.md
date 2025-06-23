@@ -41,14 +41,5 @@
 
 ![image](https://github.com/user-attachments/assets/ccd69ae1-f69b-4ee1-926b-30cb26d0e8be)
 
-
-
-
-
-
-
-
-### Preencha os campos solicitados e aguarde o retorno.
-
-### O projeto ainda está em construção.
-## O projeto está sendo desenvolvido a fim de aprendizado e curiosidade sobre a linguagem de programação Delphi.
+### O projeto ainda está em construção...
+## O projeto está sendo desenvolvido por curiosidade sobre a linguagem Delphi.
